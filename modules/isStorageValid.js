@@ -1,13 +1,11 @@
-export const storageAvailable = (type) => {
+const storageAvailable = (type) => {
   let storage;
-  let isStorage = false;
   try {
     storage = window[type];
     const x = '__storage_test__';
     storage.setItem(x, x);
     storage.removeItem(x);
-    isStorage = true;
-    return isStorage;
+    return true;
   } catch (e) {
     return (
       e instanceof DOMException
@@ -26,3 +24,5 @@ export const storageAvailable = (type) => {
     );
   }
 }
+
+export default storageAvailable;
