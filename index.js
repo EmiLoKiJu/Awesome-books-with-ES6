@@ -1,12 +1,19 @@
 // Checking local storage
 
-import storageAvailable from "./modules/isStorageValid.js";
-const isStorage = storageAvailable('localStorage')
+import storageAvailable from './modules/isStorageValid.js';
 
 // Creating a new collection of books
 
-import bookcollection from "./modules/bookcollection.js";
-const BookCol = new bookcollection();
+import Bookcollection from './modules/bookcollection.js';
+
+// Getting the functionality to add books to local storage, and to the collection class
+
+import appendNewBook from './modules/appendbooks.js';
+import menuselector from './modules/menuselector.js';
+import { DateTime } from './modules/dateandtime.js';
+
+const isStorage = storageAvailable('localStorage');
+const BookCol = new Bookcollection();
 
 // Creating some const for the document
 
@@ -16,10 +23,6 @@ const book = {
   title: '',
   author: '',
 };
-
-// Getting the functionality to add books to local storage, and to the collection class
-
-import appendNewBook from "./modules/appendbooks.js";
 
 // Calling the events when clicking
 
@@ -45,7 +48,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const menu = document.querySelectorAll('header li');
 const section = document.querySelectorAll('.section');
-import menuselector from "./modules/menuselector.js";
 for (let i = 0; i < menu.length; i += 1) {
   menu[i].addEventListener('click', () => {
     menuselector(menu[i], menu, section);
@@ -55,11 +57,10 @@ for (let i = 0; i < menu.length; i += 1) {
 // Date and time
 
 const datetime = document.querySelector('.dateandtime');
-import { DateTime } from "./modules/dateandtime.js";
 const updateTime = () => {
   const dt = DateTime.now();
   const formattedDate = dt.toFormat('LLL d, yyyy, hh:mm:ss a');
   datetime.innerHTML = formattedDate;
-}
+};
 
 setInterval(updateTime, 1000);

@@ -8,6 +8,6 @@ const menuselector = (menuelement, menu, section) => {
       if (!section[i].classList.contains('dnone')) section[i].classList.add('dnone');
     }
   }
-}
+};
 
 export default menuselector;

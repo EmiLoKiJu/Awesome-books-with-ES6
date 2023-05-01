@@ -23,6 +23,6 @@ const storageAvailable = (type) => {
       && storage.length !== 0
     );
   }
-}
+};
 
 export default storageAvailable;

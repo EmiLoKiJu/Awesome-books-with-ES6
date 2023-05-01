@@ -14,6 +14,6 @@ const appendNewBook = (book, bookcollection, isStorage, bookscontainer) => {
     localStorage.setItem('bookcollection', JSON.stringify(bookcollection));
     div1.remove();
   });
-}
+};
 
 export default appendNewBook;
