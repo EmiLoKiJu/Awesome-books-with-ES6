@@ -1,90 +1,89 @@
 body {
-    text-align: center;
-  }
-  
-  h1 {
-    font-size: 30px;
-  }
-  
-  header {
-    font-size: 20px;
-    margin: 1%;
-    border: solid 2px black;
-    padding: 4px 10px;
-  }
-  
-  header ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    cursor: pointer;
-  }
-  
-  li {
-    padding: 0 6px;
-  }
-  
-  header li:hover {
-    color: rgb(196, 196, 196);
-  }
-  
-  p {
-    margin: 0;
-  }
-  
-  .dflex {
-    display: flex;
-  }
-  
-  .spacebetween {
-    justify-content: space-between;
-  }
-  
-  .grey {
-    background-color: rgb(196, 196, 196);
-  }
-  
-  .dnone {
-    display: none;
-  }
-  
-  .textstart {
-    text-align: start;
-  }
-  
-  .activewindow {
-    color: rgb(133, 133, 133);
-  }
-  
-  .listbutton {
-    border-right: 1px solid black;
-  }
-  
-  .addnewbutton {
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-  }
-  
-  .contactbutton {
-    border-left: 1px solid black;
-  }
-  
-  .dateandtime {
-    text-align: end;
-    margin-right: 16px;
-  }
-  
-  .bookscontainer {
-    margin: 4% 16px;
-    border: 2px solid black;
-  }
-  
-  .bookscontainer div {
-    padding: 2px 16px;
-    align-items: center;
-  }
-  
-  .contact {
-    margin: 16px 20%;
-  }
-  
+  text-align: center;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+header {
+  font-size: 20px;
+  margin: 1%;
+  border: solid 2px black;
+  padding: 4px 10px;
+}
+
+header ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+li {
+  padding: 0 6px;
+}
+
+header li:hover {
+  color: rgb(196, 196, 196);
+}
+
+p {
+  margin: 0;
+}
+
+.dflex {
+  display: flex;
+}
+
+.spacebetween {
+  justify-content: space-between;
+}
+
+.grey {
+  background-color: rgb(196, 196, 196);
+}
+
+.dnone {
+  display: none;
+}
+
+.textstart {
+  text-align: start;
+}
+
+.activewindow {
+  color: rgb(133, 133, 133);
+}
+
+.listbutton {
+  border-right: 1px solid black;
+}
+
+.addnewbutton {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.contactbutton {
+  border-left: 1px solid black;
+}
+
+.dateandtime {
+  text-align: end;
+  margin-right: 16px;
+}
+
+.bookscontainer {
+  margin: 4% 16px;
+  border: 2px solid black;
+}
+
+.bookscontainer div {
+  padding: 2px 16px;
+  align-items: center;
+}
+
+.contact {
+  margin: 16px 20%;
+}
