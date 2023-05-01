@@ -47,7 +47,19 @@ const menu = document.querySelectorAll('header li');
 const section = document.querySelectorAll('.section');
 import menuselector from "./modules/menuselector.js";
 for (let i = 0; i < menu.length; i += 1) {
-    menu[i].addEventListener('click', () => {
-      menuselector(menu[i], menu, section);
-    });
-  }
+  menu[i].addEventListener('click', () => {
+    menuselector(menu[i], menu, section);
+  });
+}
+
+// Date and time
+
+const datetime = document.querySelector('.dateandtime');
+import { DateTime } from "./modules/dateandtime.js";
+const updateTime = () => {
+  const dt = DateTime.now();
+  const formattedDate = dt.toFormat('LLL d, yyyy, hh:mm:ss a');
+  datetime.innerHTML = formattedDate;
+}
+
+setInterval(updateTime, 1000);
